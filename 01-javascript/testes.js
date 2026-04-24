@@ -31,7 +31,7 @@ vitorias = prompt("Vitórias:")
 vitorias = Number(vitorias)
 
 empates = Number(prompt("Empates: "))
-// processamentos
+
 pontos = vitorias*3 + empates
 // saídas
 alert("Total de pontos: " + pontos)
