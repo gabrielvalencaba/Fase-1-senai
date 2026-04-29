@@ -1,0 +1,12 @@
+body{
+    background-color: chartreuse;
+}
+
+output {
+    /* background-color: rgb(255, 0, 0); */
+    background-color: #99FFFF;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
