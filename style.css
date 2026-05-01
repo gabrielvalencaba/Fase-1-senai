@@ -1,11 +1,44 @@
-body{
+/* Configuração Geral */
+body {
     background-color: #F0E6D2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    color: #3E2723;
 }
 
+/* Container para organizar os elementos em linha */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo do Botão */
+button {
+    background-color: #ffffff;
+    border: 2px solid #5D4037;
+    color: #5D4037;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5D4037;
+    color: #F0E6D2;
+}
+
+/* Estilo do Output (Onde o resultado aparece) */
 output {
-    /* background-color: rgb(255, 0, 0); */
-    background-color:#5D4037 ;
-    color: #000000;
+    background-color: #5D4037;
+    color: #F0E6D2; /* Cor clara para leitura */
     font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+    min-width: 300px;
+    display: inline-block;
 }

@@ -1,16 +1,19 @@
-
-function calcularPrecoBrique(){
+function verificarRecrutamento() {
     // INFOS
-    let precoCompra, precoVenda
-    // LEITURAS
-    precoCompra = Number(prompt("preço de compra:"))
-    // PROCESSAMENTO
-    precoVenda = precoCompra * 3
+    let saberNadar, idade, temRecomendacao;
+    // ENTRADAS
+    saberNadar = confirm("Você sabe nadar?");
+    idade = Number(prompt("Qual é a sua idade?"));
+    temRecomendacao = confirm("Você tem carta de recomendação de outro pirata");
     // SAIDAS
-    console.log("Preço para venda: R$" + precoVenda.toFixed(2));
-    alert("Preço para venda: R$" + precoVenda.toFixed(2));
-
-    document.getElementById("resultado").innerHTML = "Preço para venda: R$" + precoVenda.toFixed(2)
-
-
+    if (saberNadar && idade > 16) { 
+        alert("Aprovado para o navio");
+        console.log(" Marujo padrão aprovado.");
+    } else if (temRecomendacao && idade >= 14) {
+        alert("Aprovado sob recomendação. Monitorar nas primeiras viagens.");
+        console.log("Marujo por recomendação");
+    } else {
+        alert("Reprovado. Volte quando estiver mais preparado para o mar.");
+        console.log("Candidato não atende os requisitos.");
+    }
 }
