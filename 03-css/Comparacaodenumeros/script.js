@@ -1,15 +1,10 @@
-function verificarParImpar() {
-    let resposta = document.getElementById('resultado');
-    
-    // Entrada
-    let numero = Number(prompt("Digite um número:"));
+let resposta = document.getElementById('resultado')
 
-    // Processamento (%)
-    if (numero % 2 === 0) {
-        // Se o resto da divisão por 2 for 0
-        resposta.innerHTML = `O número ${numero} é PAR.`;
-    } else {
-        // Se o resto for qualquer outra coisa
-        resposta.innerHTML = `O número ${numero} é ÍMPAR.`;
+function calcularParImpar(){
+    let n = Number(prompt("Digita um número:"))
+    if(n%2 == 0){
+        alert("Par")
+    }else{
+        alert("Ímpar")
     }
 }
