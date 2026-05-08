@@ -15,7 +15,7 @@ totalDevs = clt + estagiarios + pj
 
 if(clt >= (totalDevs / 2)) {
     // bateu a quantidade funcionarios
-    mensagem = 'Batemos a quantidade de funcionarios necessaria' + totalDevs
+    mensagem = 'Batemos a quantidade de funcionarios necessaria' + totalDevs + "<br>"
 }else{
   // não bateu o minimo de funcionarios
   mensagem = " Não bateu o numero de clt necessario"
