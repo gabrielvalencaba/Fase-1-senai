@@ -1,0 +1,84 @@
+/* ESTILOS VISUAIS - TEMA CASSINO LUXO */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a; /* Fundo azul bem escuro */
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: #e0e1dd; /* Texto claro por padrão */
+}
+
+.container {
+    background-color: #1b263b; /* Fundo azul médio da caixa */
+    padding: 20px 40px;
+    border-top: 3px solid #e5a910; /* Borda dourada */
+    border-bottom: 3px solid #e5a910; /* Borda dourada */
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra chique */
+}
+
+h2 {
+    color: #ffffff; /* Título branco */
+    font-weight: bold;
+    text-align: center;
+}
+
+.status-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0d1b2a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Mesmo mantendo o nome da classe antigo no HTML, a cor agora é dourada */
+.text-verde {
+    color: #e5a910; /* Texto Dourado! */
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Estilo dos Botões */
+button {
+    background-color: #415a77; /* Botões azul acinzentado */
+    color: white;
+    border: 2px solid #778da9;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    transition: 0.2s; /* Deixa o efeito do mouse mais suave */
+}
+
+button:hover {
+    background-color: #e5a910; /* Fica dourado ao passar o mouse */
+    color: #0d1b2a;
+    border-color: #e5a910;
+}
+
+.btn-reset {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #780000; /* Vermelho escuro para o reset */
+    border-color: #c1121f;
+}
+
+.btn-reset:hover {
+    background-color: #c1121f; /* Vermelho mais vivo ao passar o mouse */
+    color: white;
+}
+
+.area-dados {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
