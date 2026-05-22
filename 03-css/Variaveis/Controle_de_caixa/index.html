@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+<p>Total Recebido: R$ <span id="total-vendas">0.00</span></p>
+<p>Seu Celso: R$ <span id="total-celso">0.00</span></p>
+<p>Seguradora: R$ <span id="total-seguradora">0.00</span></p>
+<p>Sandro Líquido: R$ <span id="faturamento-sandro">0.00</span></p>
+
+<input type="number" id="valor-venda" step="0.01" placeholder="0.00">
+<input type="checkbox" id="indicacao-celso"> Indicação Celso
+<input type="checkbox" id="venda-seguradora"> Seguradora
+<button onclick="cadastrarVenda()">Cadastrar</button>
+
+<button onclick="desfazUltimaVenda()">Desfazer Contas</button>
+<ul id="lista-vendas"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

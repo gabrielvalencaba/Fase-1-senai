@@ -1,84 +1,113 @@
-/* ESTILOS VISUAIS - TEMA CASSINO LUXO */
+/* Fundo da página e fonte principal */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1b2a; /* Fundo azul bem escuro */
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    color: #e0e1dd; /* Texto claro por padrão */
-}
-
-.container {
-    background-color: #1b263b; /* Fundo azul médio da caixa */
-    padding: 20px 40px;
-    border-top: 3px solid #e5a910; /* Borda dourada */
-    border-bottom: 3px solid #e5a910; /* Borda dourada */
-    width: 500px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra chique */
-}
-
-h2 {
-    color: #ffffff; /* Título branco */
-    font-weight: bold;
+    background-color: #1e1e2f; /* Azul escuro quase preto */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    padding: 30px;
+    margin: 0;
 }
 
-.status-area {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #0d1b2a;
-    padding: 15px;
+/* Título principal */
+h2 {
+    color: #ffcc00; /* Amarelo ouro */
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px #ff6699, 4px 4px 5px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+/* Linhas divisórias charmosas */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00e5ff, transparent);
+    margin: 30px 0;
+}
+
+/* Texto da aposta */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6699; /* Rosa neon */
+}
+
+/* Caixinha de digitar o valor */
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #ff6699;
     border-radius: 8px;
-}
-
-/* Mesmo mantendo o nome da classe antigo no HTML, a cor agora é dourada */
-.text-verde {
-    color: #e5a910; /* Texto Dourado! */
-    font-size: 18px;
-    margin: 10px 0;
+    background-color: #2b2b40;
+    color: #ffffff;
+    width: 120px;
+    margin-left: 10px;
+    outline: none;
     font-weight: bold;
 }
 
-/* Estilo dos Botões */
+input[type="number"]:focus {
+    box-shadow: 0 0 15px #ff6699; /* Brilho ao clicar */
+}
+
+/* Os botões dos Dinossauros */
 button {
-    background-color: #415a77; /* Botões azul acinzentado */
-    color: white;
-    border: 2px solid #778da9;
-    border-radius: 8px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: monospace;
+    background-color: #2b2b40;
+    color: #00e5ff; /* Ciano neon */
+    border: 2px solid #00e5ff;
+    padding: 12px 20px;
+    margin: 8px;
+    font-size: 1em;
     font-weight: bold;
-    transition: 0.2s; /* Deixa o efeito do mouse mais suave */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
+/* Efeito ao passar o mouse nos botões */
 button:hover {
-    background-color: #e5a910; /* Fica dourado ao passar o mouse */
-    color: #0d1b2a;
-    border-color: #e5a910;
+    background-color: #00e5ff;
+    color: #1e1e2f;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #00e5ff;
 }
 
-.btn-reset {
-    padding: 15px 20px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    background-color: #780000; /* Vermelho escuro para o reset */
-    border-color: #c1121f;
+/* Efeito ao clicar no botão */
+button:active {
+    transform: translateY(2px);
 }
 
-.btn-reset:hover {
-    background-color: #c1121f; /* Vermelho mais vivo ao passar o mouse */
-    color: white;
+/* Título de Resultados */
+h3 {
+    color: #00e5ff;
+    font-size: 2.2em;
+    margin-top: 40px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
-.area-dados {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+/* Textos de resultado (Seu dino, Dino sorteado, etc) */
+p {
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+/* Destaca as palavras que o JavaScript injeta */
+span {
+    font-weight: bold;
+    color: #ffcc00; /* Amarelo */
+    background-color: rgba(255, 204, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* A mensagem final de PERDEU ou GANHOU */
+#MensagemFinal {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-transform: uppercase;
 }
