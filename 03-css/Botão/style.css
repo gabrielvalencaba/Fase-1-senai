@@ -1,0 +1,51 @@
+body {
+    background-image: url('https://programadoresdepre.com.br/cdn-cgi/image/width=800,format=auto//storage/media/botoes-css-1772832045.jpeg');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+button {   
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    color: #fffefe;
+    font-size: 16px;}
+
+.btn1{
+    background-color: #ff0000;
+}
+
+.btn1:hover{
+    background-color: rgba(64, 192, 5, 0.925);
+    box-shadow: #0094639c 20px 8px 40px 10px;
+}
+
+.btn2{
+    background-color: #802faf;
+}
+
+.btn2:hover{
+    transform: scale(1.15);
+}
+.btn3{
+    background-color: rgb(235, 231, 27);
+    
+}
+
+.btn3:hover {
+  box-shadow: #e0ad059c 0px 0px 0px 3px;
+  animation: girar 0.30s linear infinite;
+}
+@keyframes girar {
+  from {
+    transform: scale(1.25) rotate(0deg);
+  }
+  to {
+    transform: scale(1.25) rotate(360deg);
+  }
+}
