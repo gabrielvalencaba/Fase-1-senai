@@ -17,7 +17,7 @@ function jogar() {
         const respostaFase2 = prompt(
             "Roque contou para  as Tias Fofinhas que o evento ainda está engatinhando e não temos camarins ou mesmo verba para comprar toalhas de crochê, infelizmente.\n" +
             "Elas ficaram tristes pela dura realidade dos músicos, mas apreciaram a sinceridade. Prometeram levar suas próprias toalhas e ainda passaram o contato do grupo de rap dos netos de uma amiga delas. Elas já viram Yasmina e os Manos se apresentando no aniversário da avó deles e acharam muito talentosos e carismáticos, além de muito conectados. Pode ser uma boa adição para este evento.\n" +
-            "Roque foi falar com eles, Yasmina pediu que o grupo fosse marcado in todas as fotos postadas de divulgação do evento, assim eles poderiam atrair seu público para o evento.\n" +
+            "Roque foi falar com eles, Yasmina pediu que o grupo fosse marcado in todas as fotos postadas de divulgação do evento, assim eles Autism atrair seu público para o evento.\n" +
             "Roque deve aceitar ou rejeitar essa exigência?\n\n" +
             "- Aceitar: [1]\n" +
             "- Rejeitar: [2]"
@@ -47,10 +47,10 @@ function jogar() {
                 );
 
                 if (respostaFase8 == "1") {
-                    // FIM 10
-                    mostrarResultado('O corte de duas das bandas originais do festival cria uma onda de revoltas entre os fãs e o festival sobre um enorme cancelamento. Depois dessa repercussão fortemente negativa ninguém mais quer ter seu nome atrelado ao evento e ele nunca mais volta a acontecer.
+                    // FIM 10 (Ajustado com crases para aceitar quebra de linha)
+                    mostrarResultado(`O corte de duas das bandas originais do festival cria uma onda de revoltas entre os fãs e o festival sobre um enorme cancelamento. Depois dessa repercussão fortemente negativa ninguém mais quer ter seu nome atrelado ao evento e ele nunca mais volta a acontecer.
 
-FIM.');
+FIM.`);
                 } else {
                     // 🌟 FASE EXTRA
                     const respostaFaseExtra = prompt(
@@ -63,23 +63,27 @@ FIM.');
                     if (respostaFaseExtra == "1") {
                         mostrarResultado('O festival foi um sucesso');
                     } else {
-                        // FIM 11
-                        mostrarResultado('fim');
+                        // FIM 11 (Trocado o texto genérico pelo seu texto real do resultado 11)
+                        mostrarResultado(`Roque nega a proposta da amazonia porque não quer virar as costas para quem esteve junto com ele desde o começo! Jeferson Bezerra então resolve usar sua influência e ‘consegue’ a liberação para exibição das músicas das bandas cover.
+
+A veiculação do festival na nova rede social acontece tanto completa como em partes e shorts, tudo vira um grande sucesso e os contatos para uma nova edição já estão fervendo!
+
+Fim.`);
                     }
                 }
 
             } else {
-                // FIM 09
-                mostrarResultado('outcome-09Roque resolve não arriscar e não inclui a Horrível Trio no evento. O evento tem alguma relavância por conta do alcance e engajamento das redes de Yasmina mas nunca decola completamente. Dada a repercussão obtida com o público nichado o evento vai virar um festival de Rap na próxima edição, mas mantendo o mesmo nome.
+                // FIM 09 (Removido o 'outcome-09' do texto e adicionado crases)
+                mostrarResultado(`Roque resolve não arriscar e não inclui a Horrível Trio no evento. O evento tem alguma relavância por conta do alcance e engajamento das redes de Yasmina mas nunca decola completamente. Dada a repercussão obtida com o público nichado o evento vai virar um festival de Rap na próxima edição, mas mantendo o mesmo nome.
 
-FIM.');
+FIM.`);
             }
 
         } else {
-            // FIM 05
-            mostrarResultado('Roque não entende a intenção de Yasmina, fica receoso e acaba rejeitando a proposta. Por conta desta decisão o Rock in Reels não viraliza. Acontece, duas boas bandas tocam, mas o evento nunca explode para o sucesso que poderia ter sido.
+            // FIM 05 (Fechado as aspas corretamente e adicionado crases)
+            mostrarResultado(`Roque não entende a intenção de Yasmina, fica receoso e acaba rejeitando a proposta. Por conta desta decisão o Rock in Reels não viraliza. Acontece, duas boas bandas tocam, mas o evento nunca explode para o sucesso que poderia ter sido.
 
-Fim.);
+Fim.`);
         }
 
     } else {
@@ -96,11 +100,25 @@ Fim.);
         );
 
         if (respostaFase3 == "1") {
+            // FIM 07 (Trocado o ID pelo texto real)
+            mostrarResultado(`Roque coloca o orgulho de lado e se dobra à proposta de seu pai, assina o contrato e consegue o financiamento para a realização do evento. O festival atinge um sucesso gigantesco, porém somente no submundo da música.
 
-            mostrarResultado('outcome-07');
+Fim.`);
         } else {
+            // FIM 06 (Trocado o ID pelo texto real)
+            mostrarResultado(`Roque lutou a vida inteira, tocando músicas que não gostava para poder alcançar seu próprio sucesso sem que ninguém pudesse jogar em sua cara que ele só chegou lá por causa do seu pai.
 
-            mostrarResultado('outcome-06');
+Ele não vai jogar tudo isso fora agora. Nem passou pela cabeça dele aceitar esse contrato.
+
+Não tem bandas, não tem dinheiro, não tem festival.
+
+Ele resolve fazer um mini show apenas, com sua própria banda que toca sucessos do samba em ritmo de Rock, a Roda de Roque.
+
+Enquanto se preparava para tocar, ele se sentiu muito triste por ter mentido para as Tias Fofinhas. Muito triste. Tão triste que acabou compondo uma música contando a história do que ele fez e o qual mal se sentia por isso. O refrão repetia “Perdão” incessantemente. O nome da música é “Perdão”.
+
+As Tias Fofinhas assistiram a transmissão, se emocionaram com a letra e com a emoção genuína de Roque e o perdoaram. Prometeram tocar no Rock in Reels se ele quiser retomar seu projeto.
+
+Fim.`);
         }
     }
 }
